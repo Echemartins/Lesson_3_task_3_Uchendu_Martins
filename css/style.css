@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 
 ol, ul {
@@ -50,3 +50,237 @@ table {
 
 
 /* Write your css below here */
+
+:root{
+	font-size: large;
+}
+
+header{
+	position: fixed;
+	width: 100vw;
+	min-height: 100px;
+	background-color: darkcyan;
+
+}
+
+.headertop{
+	padding: 5px 30px;
+	display: flex;
+	justify-content: space-between; 
+}
+
+.topright{
+	display: flex;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.socialmedia{
+	display: flex;
+	gap: 10px;
+}
+
+.topleft img{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+.socialmedia img{
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+}
+
+.headerbottom{
+	padding: 10px 30px ;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	min-height: 25px;
+	background-color: #1b196e;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	flex: 2;
+	justify-content: space-between;
+}
+
+nav a{
+	font-size: large;
+	color: aliceblue;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #2ca52a;
+	font-size: larger;
+}
+
+.search{
+	display: flex;
+}
+
+.search img{
+	display: ;
+	height: 25px;
+	width: 25px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.search input{
+	border: none;
+	height: 23px;
+	width: 150px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main{
+	min-height: 70vh;
+	display: flex;flex-direction: column-reverse;
+}
+
+.advertisement{
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.beach{
+	width: 300px;
+}
+
+.mainleft{
+	flex: 1;
+}
+
+.mainleft h1{
+	padding-top: 30px;
+	padding-left: 100px;
+}
+
+.mainright{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 20px;
+	flex: 4;
+}
+
+.container{
+	padding: 350px 10px 30px ;
+}
+
+.trends-2021{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.list{ 
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+footer{display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: aliceblue;
+}
+
+.top-footer{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 15px 40px;
+}
+
+.bottom-footer{
+	display: flex;
+	padding: 15px 40px ;
+}
+
+
+.img{
+	border-radius: 5%;
+	height: 150px;
+	width: 200px;
+}
+
+
+@media screen and (width >= 450px) {
+	.img{
+		height: 250px;
+		width: 400px;
+	}
+
+	nav{
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 20px;
+	}
+
+	.search input{
+		width: 250px;
+	}
+
+	.container{
+		padding: 200px 30px 30px ;
+	}
+	
+}
+
+@media screen and (width >= 800px) {
+	.mainleft{
+		display: block;
+	}
+
+	.headerbottom{
+	flex-direction: row;
+	}
+
+	.img{
+		height: 400px;
+		width: 700px;
+	}
+
+	nav{
+		gap: 40px;
+	}
+
+	.top-footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 15px 40px;
+	}
+
+	.container{
+		padding: 170px 50px 30px ;
+	}
+
+	.mainleft h1{
+		padding-left: 300px;
+	}
+
+	.advertisement{
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 30px;
+	}
+	
+}
+
+@media screen and (width >= 1000px) {
+	.container{
+		padding: 170px 150px 30px;
+	}
+
+}
